@@ -22,8 +22,11 @@ class Main {
 			System.err.println("ERR: File not found!");
 		}
 
-		/*
+		
 		//Part 1
+		
+		System.out.println("--- Part 1 ---");
+
 		int trees = 0;
 		int j = 0;
 		//right 3, down 1
@@ -36,11 +39,16 @@ class Main {
 		}
 
 		System.out.println("\n" + trees);
-		*/
+		
+		System.out.println("\n\n");
 
 		//Part 2
+		System.out.println("--- Part 2 ---");
+
 		int r1d1 = 0, r3d1 = 0, r5d1 = 0, r7d1 = 0, r1d2 = 0;
-		int j = 0;
+		//int j = 0;			//Uncomment this if commenting out Part 1
+		r3d1 = trees;			//Comment this out if comment out Part 1, and uncomment loop to calculate var
+
 		//right 1, down 1
 		for (int i = 0; i < map.length; i++) {
 			if (map[i][j] == '#')
@@ -50,7 +58,8 @@ class Main {
 			j = (j + 1) % map[i].length; //Loop back around to emulate tiling
 		}
 		j = 0;
-		//right 3 and down 1
+
+		/*//right 3 and down 1		Commented out for redundancy with Part 1
 		for (int i = 0; i < map.length; i++) {
 			if (map[i][j] == '#')
 				r3d1++;
@@ -58,7 +67,8 @@ class Main {
 			
 			j = (j + 3) % map[i].length; //Loop back around to emulate tiling
 		}
-		j = 0;
+		j = 0;*/
+
 		//right 5 and down 1
 		for (int i = 0; i < map.length; i++) {
 			if (map[i][j] == '#')
@@ -68,6 +78,7 @@ class Main {
 			j = (j + 5) % map[i].length; //Loop back around to emulate tiling
 		}
 		j = 0;
+
 		//right 7 and down 1
 		for (int i = 0; i < map.length; i++) {
 			if (map[i][j] == '#')
@@ -77,6 +88,7 @@ class Main {
 			j = (j + 7) % map[i].length; //Loop back around to emulate tiling
 		}
 		j = 0;
+
 		//right 1 and down 2
 		for (int i = 0; i < map.length; i+=2) {
 			if (map[i][j] == '#')

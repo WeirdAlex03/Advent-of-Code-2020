@@ -18,7 +18,8 @@ class Main {
 			System.err.println("ERR: File not found!");
 		}
 
-		/* Part 1
+		//Part 1
+		System.out.println("--- Part 1 ---");
 		int min, max;
 		char chr;
 		String pass;
@@ -45,12 +46,16 @@ class Main {
 			}
 		}
 		System.out.println(count);
-		*/
+		
+		System.out.println("\n\n");
 
 		//Part 2
-		int min, max;
-		char chr;
-		String pass;
+		System.out.println("--- Part 2 ---");
+
+		//Uncomment these if you're commenting out part 1
+		//int min, max;
+		//char chr;
+		//String pass;
 
 		int count = 0;
 		for (int i = 0; i < enteries.length; i++) {

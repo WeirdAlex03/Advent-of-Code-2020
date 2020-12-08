@@ -19,7 +19,9 @@ class Main {
 			System.err.println("ERR: File not found!");
 		}
 
-		/* Part 1
+		// Part 1
+		System.out.println("--- Part 1 ---");
+		
 		for (int i = 0; i < enteries.length; i++) {
 			for (int j = i; j < enteries.length; j++) {
 				if (enteries[i] + enteries[j] == 2020) {
@@ -27,10 +29,14 @@ class Main {
 					System.out.println("The solution is " + enteries[i]*enteries[j]);
 				}
 			}
-		} */
+		}
+		
+		System.out.println("\n\n");
 
-	//Part 2
-	for (int i = 0; i < enteries.length; i++) {
+		//Part 2
+		System.out.println("--- Part 2 ---");
+
+		for (int i = 0; i < enteries.length; i++) {
 			for (int j = i; j < enteries.length; j++) {
 				for (int k = j; k < enteries.length; k++) {
 					if (enteries[i] + enteries[j] + enteries[k] == 2020) {
